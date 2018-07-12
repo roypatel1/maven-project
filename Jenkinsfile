@@ -6,22 +6,22 @@ pipeline {
      steps{
       echo "Hello Build"}
     }
-    }
+    
  
- stages{
+
     stage('staging'){
      steps{
       echo "Hello staging"}
     }
-    }
+
  
- stages{
+
     stage('prod'){
      steps{
       echo "Hello prod"}
     }
-    }
     
+ }   
 
 
 
