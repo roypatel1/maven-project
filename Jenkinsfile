@@ -3,23 +3,25 @@ pipeline {
   
   stages{
     stage('Build'){
-    steps
-      echo "Hello Build"
+     steps{
+      echo "Hello Build"}
+    }
+    }
+ 
+ stages{
+    stage('staging'){
+     steps{
+      echo "Hello staging"}
+    }
+    }
+ 
+ stages{
+    stage('prod'){
+     steps{
+      echo "Hello prod"}
+    }
     }
     
-     stages{
-    stage('deploy to staging'){
-    steps
-            echo "Hello staging"
-    }
-      
-            stages{
-    stage('deploy to prod'){
-    steps
-            echo "Hello prod"
-    }
-      
-  }
 
 
 
